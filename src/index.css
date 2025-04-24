@@ -1,0 +1,165 @@
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.crypto-table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table-header {
+  background-color: #f5f5f5;
+}
+
+.table-header th {
+  padding: 12px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.table-row {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.table-row:hover {
+  background-color: #fafafa;
+}
+
+.table-row td {
+  padding: 12px;
+}
+
+.name-cell {
+  display: flex;
+  align-items: center;
+}
+
+.crypto-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.crypto-name {
+  font-weight: 500;
+}
+
+.crypto-symbol {
+  color: #6b7280;
+}
+
+.positive {
+  color: #10b981;
+}
+
+.negative {
+  color: #ef4444;
+}
+
+.chart-image {
+  width: 100px;
+  height: 30px;
+}
+
+@media (max-width: 1200px) {
+  .crypto-table {
+    min-width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  .table-header, .table-row {
+    display: block;
+    width: 100%;
+  }
+
+  .table-header tr, .table-row {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .table-header th, .table-row td {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .table-header th {
+    font-size: 12px;
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #d5d5d5;
+    font-weight: 600;
+    justify-content: space-between;
+  }
+
+  .table-row td {
+    border-bottom: 1px solid #e5e5e5;
+    flex-wrap: wrap;
+  }
+
+  .name-cell, .crypto-symbol, .table-row td:nth-child(4) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .crypto-logo {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .chart-image {
+    width: 80px;
+    height: 24px;
+  }
+
+  .table-header th:nth-child(7), .table-header th:nth-child(8), .table-header th:nth-child(9), .table-header th:nth-child(11),
+  .table-row td:nth-child(7), .table-row td:nth-child(8), .table-row td:nth-child(9), .table-row td:nth-child(11) {
+    display: none;
+  }
+
+  .table-row td:nth-child(2)::before { content: "Name: "; font-weight: bold; }
+  .table-row td:nth-child(3)::before { content: "Symbol: "; font-weight: bold; }
+  .table-row td:nth-child(4)::before { content: "Price: "; font-weight: bold; }
+  .table-row td:nth-child(5)::before { content: "1h %: "; font-weight: bold; }
+  .table-row td:nth-child(6)::before { content: "24h %: "; font-weight: bold; }
+  .table-row td:nth-child(10)::before { content: "Circulating Supply: "; font-weight: bold; }
+  .table-row td:nth-child(12)::before { content: "Last 7 Days: "; font-weight: bold; }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .table-header th, .table-row td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .crypto-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .chart-image {
+    width: 60px;
+    height: 18px;
+  }
+}
