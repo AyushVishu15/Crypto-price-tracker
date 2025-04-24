@@ -64,9 +64,10 @@ Implement local storage to persist user preferences or data between sessions.
 Add interactive 7-day price charts using a library like Chart.js.
 Include unit tests with Jest to ensure code reliability.
 
-Screenshots
+Screenshot
 
 ![image](https://github.com/user-attachments/assets/f85b0d6d-eb91-4a5b-9e21-67833abb44fa)
 
 Video
+
 https://www.loom.com/share/2d5e8402998948e784d0ce5b6dc95e22?sid=2632883a-c314-4dcf-b554-3e51e509520b
